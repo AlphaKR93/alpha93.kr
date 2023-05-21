@@ -1,0 +1,14 @@
+.null {
+    --primary: none;
+    --secondary: none;
+}
+
+.icon {
+    @apply trans h-[22px] w-[22px];
+
+    background: var(--primary) no-repeat;
+
+    &:hover {
+        background: var(--secondary) no-repeat;
+    }
+}

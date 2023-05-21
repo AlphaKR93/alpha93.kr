@@ -1,0 +1,7 @@
+.body {
+    @apply bg-black text-white pt-24;
+
+    main {
+        @apply mx-auto min-h-screen w-full max-w-[1340px];
+    }
+}

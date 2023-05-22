@@ -1,11 +1,16 @@
 // noinspection HtmlRequiredTitleElement
 
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Home() {
+    const [isReady, updateStatus] = useState(false);
+    useEffect(() => updateStatus(true), []);
+
     return (
         <html lang="en">
-            <head>
-                <meta httpEquiv="refresh" content="0; url=/ko-KR" />
-            </head>
+            <head>{isReady ? <meta httpEquiv="refresh" content={`0; url=/${navigator.language}`} /> : null}</head>
         </html>
     );
 }

@@ -4,6 +4,13 @@ const plugin = require("tailwindcss/plugin");
 /** @type {import("tailwindcss").Config} */
 module.exports = {
     content: ["./src/**/*.tsx"],
+    theme: {
+        extend: {
+            fontFamily: {
+                elice: ["Elice Digital Coding", "monospace"]
+            }
+        }
+    },
     plugins: [
         "flowbite/plugin",
         plugin(function Plugin({ addComponents }) {

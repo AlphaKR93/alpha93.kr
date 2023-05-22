@@ -1,0 +1,53 @@
+.main {
+    .banner {
+        @apply relative;
+
+        .glower {
+            @apply absolute inset-0 rounded bg-blue-800 bg-opacity-60 blur-xl;
+        }
+
+        .background {
+            @apply relative rounded-3xl bg-black;
+        }
+
+        .content {
+            @apply rounded-3xl bg-gradient-to-br from-blue-800/5 to-purple-800/10 py-20 text-center;
+
+            h1 {
+                @apply bg-gradient-to-r from-yellow-200 to-red-600 bg-clip-text text-7xl font-bold text-transparent;
+            }
+
+            p {
+                @apply mt-7 text-lg text-gray-300;
+
+                &.start {
+                    @apply mb-1.5 mt-0 text-2xl;
+                }
+            }
+
+            .social {
+                @apply mt-8 flex h-max items-center justify-center gap-6 text-gray-400;
+
+                svg {
+                    @apply w-6;
+                }
+            }
+        }
+    }
+
+    .contributed {
+        @apply mt-16;
+
+        h1 {
+            @apply text-2xl font-bold text-gray-300;
+        }
+    }
+
+    .translated {
+        @apply mt-16;
+
+        h1 {
+            @apply text-2xl font-bold text-gray-300;
+        }
+    }
+}

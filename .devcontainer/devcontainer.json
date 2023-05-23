@@ -1,0 +1,88 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+    "name": "Ubuntu",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/base:jammy",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "formulahendry.auto-complete-tag",
+                "NuclleaR.vscode-extension-auto-import",
+                "mrmlnc.vscode-autoprefixer",
+                "fractalbrew.backticks",
+                "jomeinaster.bracket-peek",
+                "chunsen.bracket-select",
+                "riussi.code-stats-vscode",
+                "GitHub.vscode-codeql",
+                "adam-bender.commit-message-editor",
+                "dzhavat.css-initial-value",
+                "pucelle.vscode-css-navigation",
+                "pranaygp.vscode-css-peek",
+                "dendron.dendron-paste-image",
+                "dbaeumer.vscode-eslint",
+                "PeterSchmalfeldt.explorer-exclude",
+                "waderyan.gitblame",
+                "donjayamanne.git-extension-pack",
+                "pomber.git-file-history",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                "github.vscode-github-actions",
+                "GitHub.copilot-chat",
+                "GitHub.copilot-labs",
+                "GitHub.copilot-nightly",
+                "GitHub.vscode-pull-request-github",
+                "codezombiech.gitignore",
+                "eamodio.gitlens",
+                "seatonjiang.gitmoji-vscode",
+                "fabiospampinato.vscode-highlight",
+                "ecmel.vscode-html-css",
+                "anteprimorac.html-end-tag-labels",
+                "solnurkarim.html-to-css-autocompletion",
+                "bradgashler.htmltagwrap",
+                "Syler.ignore",
+                "kisstkondoros.vscode-gutter-preview",
+                "RobertOstermann.inline-parameters-extended",
+                "liamhammett.inline-parameters",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "VisualStudioExptTeam.intellicode-api-usage-examples",
+                "MS-CEINTL.vscode-language-pack-ko",
+                "stringham.move-ts",
+                "ziyasal.vscode-open-in-github",
+                "christian-kohler.path-intellisense",
+                "esbenp.prettier-vscode",
+                "rvest.vs-code-prettier-eslint",
+                "cipchk.cssrem",
+                "stylelint.vscode-stylelint",
+                "albert.TabOut",
+                "bradlc.vscode-tailwindcss",
+                "ms-vscode.test-adapter-converter",
+                "hbenl.vscode-test-explorer",
+                "Gruntfuggly.todo-tree",
+                "shardulm94.trailing-spaces",
+                "DSKWRK.vscode-generate-getter-setter",
+                "pflannery.vscode-versionlens",
+                "styled-components.vscode-styled-components",
+                "alefragnani.project-manager"
+            ]
+        }
+    }
+
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
+
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "uname -a",
+
+    // Configure tool-specific properties.
+    // "customizations": {},
+
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-    title: "Alpha93 - Korean Student Developer",
+    title: "Alpha93 - Full-stack Student Developer",
     description: "I'm Alpha, a Korean student developer."
 };
 

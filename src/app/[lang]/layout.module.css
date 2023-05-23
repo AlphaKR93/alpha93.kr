@@ -1,5 +1,5 @@
 .body {
-    @apply bg-black pt-32 text-gray-300;
+    @apply bg-black pt-28 text-gray-300;
 
     main {
         @apply mx-auto min-h-screen w-full max-w-[1340px];

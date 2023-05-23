@@ -1,6 +1,6 @@
 .main {
     .banner {
-        @apply relative;
+        @apply relative z-0;
 
         .glower {
             @apply absolute inset-0 rounded bg-blue-800 bg-opacity-60 blur-xl;
@@ -44,6 +44,14 @@
     }
 
     .translated {
+        @apply mt-16;
+
+        h1 {
+            @apply text-2xl font-bold text-gray-300;
+        }
+    }
+
+    .languages {
         @apply mt-16;
 
         h1 {

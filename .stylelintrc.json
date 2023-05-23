@@ -6,7 +6,6 @@
             {
                 "ignoreAtRules": ["tailwind", "at-root", "include"]
             }
-        ],
-        "no-descending-specificity": [false, {}]
+        ]
     }
 }

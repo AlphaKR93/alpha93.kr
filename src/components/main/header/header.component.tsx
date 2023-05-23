@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { AtSymbolIcon } from "@heroicons/react/24/outline";
 import AnimatedSimpleIcon from "@/components/modules/simpleIcons/simpleIcons";
+import ProfilePicture from "@/assets/ProfileImage.png";
 import styles from "./header.module.css";
-import ProfilePicture from "./ProfileImage.png";
 
 export default function HeaderComponent() {
     return (

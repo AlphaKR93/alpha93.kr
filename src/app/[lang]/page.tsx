@@ -1,8 +1,18 @@
 import Link from "next/link";
-import Image from "next/image";
-import { AtSymbolIcon } from "@heroicons/react/24/outline";
+import { AtSymbolIcon, GlobeAltIcon, ServerStackIcon } from "@heroicons/react/24/outline";
 import AnimatedSimpleIcon from "@/components/modules/simpleIcons/simpleIcons";
 import PlazmaImage from "@/assets/Plazma.png";
+import FomalhautImage from "@/assets/Fomalhaut.jpg";
+import SchoolDdayImage from "@/assets/SchoolDday.png";
+import ProfileImage from "@/assets/ProfileImage.png";
+import FabulouslyOptimizedImage from "@/assets/FabulouslyOptimized.png";
+import SodiumExtraImage from "@/assets/SodiumExtra.png";
+import SodiumImage from "@/assets/Sodium.png";
+import SkriptImage from "@/assets/SkriptLang.png";
+import MinecraftIcon from "@/assets/icons/MinecraftIcon";
+import JavaIcon from "@/assets/icons/JavaIcon";
+import NextIcon from "@/assets/icons/NextIcon";
+import ProjectBannerComponent from "@/components/modules/projectBanner/projectBanner.component";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -12,7 +22,7 @@ export default function Home() {
                 <div className={styles.glower} />
                 <div className={styles.background}>
                     <div className={styles.content}>
-                        <p className={styles.start}>Hi! I&#39;m</p>
+                        <p className={styles.start}>Hi! I&apos;m</p>
                         <h1>Alpha</h1>
                         <p>
                             Korean full-stack student developer & translate proofreader
@@ -45,54 +55,152 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className={styles.contributed}>
-                <h1>class ContributingProjects</h1>
-                <div className="my-6 rounded-xl bg-gray-600 bg-opacity-20 p-7">
-                    <div className="rounded-xl bg-pink-700">
-                        <div className="flex">
-                            <div className="rounded-tr-xl bg-gray-800" />
-                            <div className="z-0 h-max w-max">
-                                <div className="min-h-max min-w-max rounded-full bg-gray-900 p-1.5 pr-2">
-                                    <Image
-                                        src={PlazmaImage}
-                                        width={72}
-                                        height={72}
-                                        alt="Plazma Icon"
-                                        className="rounded-full"
-                                    />
-                                </div>
-                                <div className="mt-4 h-full w-full bg-gray-800 p-6" />
-                            </div>
-                        </div>
-                    </div>
+            <section className={styles.section}>
+                <span className={styles.title}>
+                    <h1>Teams</h1>
+                </span>
+                <div className={styles.main}>
+                    <ProjectBannerComponent
+                        image={PlazmaImage}
+                        name="PlazmaMC"
+                        tagIcons={null}
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
+                    <ProjectBannerComponent
+                        image={SodiumExtraImage}
+                        name="Team Earendel"
+                        tagIcons={null}
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
+                    <ProjectBannerComponent
+                        image={SodiumImage}
+                        name="MDD & MCC"
+                        tagIcons={null}
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
+                    <ProjectBannerComponent
+                        image={FabulouslyOptimizedImage}
+                        name="FO Translation"
+                        tagIcons={null}
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
                 </div>
-                {/*
-                - Plazma
-                  - AlwaysUpToDate
-                  - Homepage
-                  - Andromeda (Archived)
-                    - Andromeda Plus (Archived)
-                    - Magellan (Archived)
-                  - Prismarine (Archived)
-                - Fomalhaut
-                - SchoolDday
-                - Portfolio
-                  - TeamEarendel Portfolio
-                 */}
             </section>
-            <section className={styles.translated}>
-                <h1>class TranslatingProjects</h1>
-                <div className="my-6 rounded-xl bg-gray-600 bg-opacity-20 p-7" />
-                {/*
-                - Fabulously Optimized
-                - Sodium Extra
-                - Unofficial Sodium Translation
-                - Skript
-                 */}
+            <section className={styles.section}>
+                <span className={styles.title}>
+                    <h1>Developing Projects</h1>
+                    <p>More info &gt;</p>
+                </span>
+                <div className={styles.main}>
+                    <ProjectBannerComponent
+                        image={PlazmaImage}
+                        name="Plazma"
+                        tagIcons={
+                            <>
+                                <JavaIcon />
+                                <MinecraftIcon />
+                                <ServerStackIcon />
+                            </>
+                        }
+                        description="A Server Platform for Minecraft based on Paper"
+                    />
+                    <ProjectBannerComponent
+                        image={FomalhautImage}
+                        name="Fomalhaut"
+                        tagIcons={
+                            <>
+                                <NextIcon />
+                                <GlobeAltIcon className="h-7 w-7 text-white" />
+                            </>
+                        }
+                        description="Multithreaded Discord bot engine based on discord.py"
+                    />
+                    <ProjectBannerComponent
+                        image={SchoolDdayImage}
+                        name="School Dday"
+                        tagIcons={
+                            <>
+                                <NextIcon />
+                                <GlobeAltIcon className="h-7 w-7 text-white" />
+                            </>
+                        }
+                        description="D-day site for my school"
+                    />
+                    <ProjectBannerComponent
+                        image={ProfileImage}
+                        name="Portfolio"
+                        tagIcons={
+                            <>
+                                <NextIcon />
+                                <GlobeAltIcon className="h-7 w-7 text-white" />
+                            </>
+                        }
+                        description="My personal ortfolio site (This website)"
+                    />
+                </div>
             </section>
-            <section className={styles.languages}>
-                <h1>class UsingLanguages</h1>
-                <div className="my-6 rounded-xl bg-gray-600 bg-opacity-20 p-7" />
+            <section className={styles.section}>
+                <span className={styles.title}>
+                    <h1>Translating Projects</h1>
+                    <p>More info &gt;</p>
+                </span>
+                <div className={styles.main}>
+                    <ProjectBannerComponent
+                        image={FabulouslyOptimizedImage}
+                        name="FO MMH, CRH"
+                        tagIcons={
+                            <>
+                                <JavaIcon />
+                                <MinecraftIcon />
+                            </>
+                        }
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
+                    <ProjectBannerComponent
+                        image={SodiumExtraImage}
+                        name="Sodium Extra"
+                        tagIcons={
+                            <>
+                                <NextIcon />
+                                <GlobeAltIcon className="h-7 w-7 text-white" />
+                            </>
+                        }
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
+                    <ProjectBannerComponent
+                        image={SodiumImage}
+                        name="Sodium"
+                        tagIcons={
+                            <>
+                                <NextIcon />
+                                <GlobeAltIcon className="h-7 w-7 text-white" />
+                            </>
+                        }
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
+                    <ProjectBannerComponent
+                        image={SkriptImage}
+                        name="Skript"
+                        tagIcons={
+                            <>
+                                <NextIcon />
+                                <GlobeAltIcon className="h-7 w-7 text-white" />
+                            </>
+                        }
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    />
+                </div>
+            </section>
+            <section className={styles.section}>
+                <span className={styles.title}>
+                    <h1>Languages and Tools</h1>
+                </span>
+                <div className={styles.main}>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Nulla in purus ac purus tempus pellentesque sit amet et quam.</p>
+                    <p>Sed malesuada lectus in nisi porttitor congue eget id tortor.</p>
+                    <p>Aenean gravida leo id faucibus blandit.</p>
+                </div>
                 {/*
                 ## Speaking
                 - Korean

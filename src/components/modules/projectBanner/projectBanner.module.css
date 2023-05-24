@@ -1,0 +1,28 @@
+.banner {
+    @apply h-full w-full rounded-xl bg-gray-800 p-6;
+
+    .title {
+        @apply flex items-center gap-6;
+        img {
+            @apply h-20 w-20 rounded-full border-8 border-gray-900 bg-gray-900;
+        }
+
+        .projectTitle {
+            h1 {
+                @apply text-xl;
+            }
+
+            .tagIcons {
+                @apply mt-3.5 flex items-center gap-2 text-sm;
+
+                svg {
+                    @apply h-6 w-6 text-white;
+                }
+            }
+        }
+    }
+
+    .description {
+        @apply mt-2 p-3 text-sm;
+    }
+}

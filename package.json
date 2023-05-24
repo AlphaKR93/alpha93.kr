@@ -3,15 +3,13 @@
     "version": "0.1.0.0",
     "private": true,
     "scripts": {
+        "prepare": "husky install",
         "dev": "next dev --turbo",
         "webpack": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "prepare": "husky install",
-        "format": "prettier --write \"**/*.*\"",
-        "lintCss": "stylelint \"**/*.css\"",
-        "formatCss": "stylelint --fix \"**/*.css\""
+        "lint": "next lint && stylelint \"**/*.css\" && prettier -c \"**/*.{js,yml,json,ts,tsx,css,md}\"",
+        "format": "stylelint --fix \"**/*.css\" && prettier -w \"**/*.{js,yml,json,ts,tsx,css,md}\""
     },
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown"

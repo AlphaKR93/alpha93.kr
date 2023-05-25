@@ -1,0 +1,248 @@
+
+            <section className={styles.section}>
+                <span className={styles.title}>
+                    <h1>Teams</h1>
+                </span>
+                <div className={styles.main}>
+                    <ProjectBannerComponent
+                        image={PlazmaImage}
+                        name="PlazmaMC"
+                        tagIcons={null}
+                        description="A Minecraft Software organization focusing on improving perfomance"
+                        linkIcons={
+                            <>
+                                <Link href="https://github.com/PlazmaMC">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://discord.gg/5hYydS3AQu">
+                                    <AnimatedSimpleIcon
+                                        id="discord"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://plazmamc.org">
+                                    <GlobeAltIcon className="h-6 w-6" />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                    <ProjectBannerComponent
+                        image={EarendelImage}
+                        name="Team Earendel"
+                        tagIcons={null}
+                        description="A team of Korean student developers working in various fields"
+                        linkIcons={
+                            <>
+                                <Link href="https://github.com/TeamEarendel">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://earendel.org">
+                                    <GlobeAltIcon className="h-6 w-6" />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                    <ProjectBannerComponent
+                        image={MDDImage}
+                        name="MDD & MCC"
+                        tagIcons={null}
+                        description="Communities where you can ask questions about Minecraft development"
+                        linkIcons={
+                            <AnimatedSimpleIcon
+                                id="discord"
+                                color={{
+                                    primary: "ffffff",
+                                    secondary: "ffffff"
+                                }}
+                            />
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                    <ProjectBannerComponent
+                        image={FabulouslyOptimizedImage}
+                        name="FO Translation"
+                        tagIcons={null}
+                        description="A Minecraft modpack focusing on performance and graphics enhancements."
+                        linkIcons={
+                            <>
+                                <Link href="https://modrinth.com/modpack/fabulously-optimized">
+                                    <AnimatedSimpleIcon
+                                        id="modrinth"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://github.com/Fabulously-Optimized/fabulously-optimized">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://fabulously-optimized.github.io/discord">
+                                    <AnimatedSimpleIcon
+                                        id="discord"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                </div>
+            </section>
+            <section className={styles.section}>
+                <span className={styles.title}>
+                    <h1>Translating Projects (EN =&gt; KO)</h1>
+                    <p>More info &gt;</p>
+                </span>
+                <div className={styles.main}>
+                    <ProjectBannerComponent
+                        image={FabulouslyOptimizedImage}
+                        name="FO MMH, CRH"
+                        tagIcons={<MinecraftIcon />}
+                        description="A Minecraft modpack focusing on performance and graphics enhancements."
+                        linkIcons={
+                            <>
+                                <Link href="https://alpha93.kr/">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://github.com/AlphaKR93/alpha93.kr">
+                                    <GlobeAltIcon className="h-6 w-6" />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                    <ProjectBannerComponent
+                        image={SodiumExtraImage}
+                        name="Sodium Extra"
+                        tagIcons={<MinecraftIcon />}
+                        description="A mod aims to bring most of OptiFine's eye-candy options to Sodium."
+                        linkIcons={
+                            <>
+                                <Link href="https://alpha93.kr/">
+                                    <AnimatedSimpleIcon
+                                        id="modrinth"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://alpha93.kr/">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                    <ProjectBannerComponent
+                        image={SodiumImage}
+                        name="Sodium"
+                        tagIcons={<MinecraftIcon />}
+                        description="Modern rendering engine and client-side optimization mod for Minecraft."
+                        linkIcons={
+                            <>
+                                <Link href="https://alpha93.kr/">
+                                    <AnimatedSimpleIcon
+                                        id="modrinth"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://alpha93.kr/">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                    <ProjectBannerComponent
+                        image={SkriptImage}
+                        name="Skript"
+                        tagIcons={<MinecraftIcon />}
+                        description="A Bukkit plugin which allows server admins to customize their server easily."
+                        linkIcons={
+                            <Link href="https://alpha93.kr/">
+                                <AnimatedSimpleIcon
+                                    id="github"
+                                    color={{
+                                        primary: "ffffff",
+                                        secondary: "ffffff"
+                                    }}
+                                />
+                            </Link>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
+                    />
+                </div>
+            </section>

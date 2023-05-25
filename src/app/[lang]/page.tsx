@@ -1,18 +1,14 @@
 import Link from "next/link";
 import { AtSymbolIcon, GlobeAltIcon, ServerStackIcon } from "@heroicons/react/24/outline";
 import AnimatedSimpleIcon from "@/components/modules/simpleIcons/simpleIcons";
+import ProjectBannerComponent from "@/components/modules/projectBanner/projectBanner.component";
 import PlazmaImage from "@/assets/Plazma.png";
 import FomalhautImage from "@/assets/Fomalhaut.jpg";
 import SchoolDdayImage from "@/assets/SchoolDday.png";
 import ProfileImage from "@/assets/ProfileImage.png";
-import FabulouslyOptimizedImage from "@/assets/FabulouslyOptimized.png";
-import SodiumExtraImage from "@/assets/SodiumExtra.png";
-import SodiumImage from "@/assets/Sodium.png";
-import SkriptImage from "@/assets/SkriptLang.png";
 import MinecraftIcon from "@/assets/icons/MinecraftIcon";
 import JavaIcon from "@/assets/icons/JavaIcon";
 import NextIcon from "@/assets/icons/NextIcon";
-import ProjectBannerComponent from "@/components/modules/projectBanner/projectBanner.component";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -57,37 +53,6 @@ export default function Home() {
             </section>
             <section className={styles.section}>
                 <span className={styles.title}>
-                    <h1>Teams</h1>
-                </span>
-                <div className={styles.main}>
-                    <ProjectBannerComponent
-                        image={PlazmaImage}
-                        name="PlazmaMC"
-                        tagIcons={null}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    />
-                    <ProjectBannerComponent
-                        image={SodiumExtraImage}
-                        name="Team Earendel"
-                        tagIcons={null}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    />
-                    <ProjectBannerComponent
-                        image={SodiumImage}
-                        name="MDD & MCC"
-                        tagIcons={null}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    />
-                    <ProjectBannerComponent
-                        image={FabulouslyOptimizedImage}
-                        name="FO Translation"
-                        tagIcons={null}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    />
-                </div>
-            </section>
-            <section className={styles.section}>
-                <span className={styles.title}>
                     <h1>Developing Projects</h1>
                     <p>More info &gt;</p>
                 </span>
@@ -103,17 +68,70 @@ export default function Home() {
                             </>
                         }
                         description="A Server Platform for Minecraft based on Paper"
+                        linkIcons={
+                            <>
+                                <Link href="https://github.com/PlazmaMC/Plazma">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://discord.gg/5hYydS3AQu">
+                                    <AnimatedSimpleIcon
+                                        id="discord"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "https://plazmamc.org/",
+                            isMove: true
+                        }}
                     />
                     <ProjectBannerComponent
                         image={FomalhautImage}
                         name="Fomalhaut"
                         tagIcons={
                             <>
-                                <NextIcon />
-                                <GlobeAltIcon className="h-7 w-7 text-white" />
+                                <AnimatedSimpleIcon
+                                    id="python"
+                                    color={{
+                                        primary: "ffffff",
+                                        secondary: "ffffff"
+                                    }}
+                                />
+                                <AnimatedSimpleIcon
+                                    id="discord"
+                                    color={{
+                                        primary: "ffffff",
+                                        secondary: "ffffff"
+                                    }}
+                                />
                             </>
                         }
-                        description="Multithreaded Discord bot engine based on discord.py"
+                        description="Multithreaded Discord bot based on discord.py"
+                        linkIcons={
+                            <Link href="https://github.com/TeamEarendel/Fomalhaut">
+                                <AnimatedSimpleIcon
+                                    id="github"
+                                    color={{
+                                        primary: "ffffff",
+                                        secondary: "ffffff"
+                                    }}
+                                />
+                            </Link>
+                        }
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
                     />
                     <ProjectBannerComponent
                         image={SchoolDdayImage}
@@ -124,7 +142,27 @@ export default function Home() {
                                 <GlobeAltIcon className="h-7 w-7 text-white" />
                             </>
                         }
-                        description="D-day site for my school"
+                        description="A D-day website for my school students"
+                        linkIcons={
+                            <>
+                                <Link href="https://dday.alpha93.kr/">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://github.com/AlphaKR93/SchoolDday">
+                                    <GlobeAltIcon className="h-6 w-6" />
+                                </Link>
+                            </>
+                        }
+                        moreInfo={{
+                            url: "https://dday.alpha93.kr/",
+                            isMove: true
+                        }}
                     />
                     <ProjectBannerComponent
                         image={ProfileImage}
@@ -135,59 +173,27 @@ export default function Home() {
                                 <GlobeAltIcon className="h-7 w-7 text-white" />
                             </>
                         }
-                        description="My personal ortfolio site (This website)"
-                    />
-                </div>
-            </section>
-            <section className={styles.section}>
-                <span className={styles.title}>
-                    <h1>Translating Projects</h1>
-                    <p>More info &gt;</p>
-                </span>
-                <div className={styles.main}>
-                    <ProjectBannerComponent
-                        image={FabulouslyOptimizedImage}
-                        name="FO MMH, CRH"
-                        tagIcons={
+                        description="My personal portfolio site (This website)"
+                        linkIcons={
                             <>
-                                <JavaIcon />
-                                <MinecraftIcon />
+                                <Link href="https://alpha93.kr/">
+                                    <AnimatedSimpleIcon
+                                        id="github"
+                                        color={{
+                                            primary: "ffffff",
+                                            secondary: "ffffff"
+                                        }}
+                                    />
+                                </Link>
+                                <Link href="https://github.com/AlphaKR93/alpha93.kr">
+                                    <GlobeAltIcon className="h-6 w-6" />
+                                </Link>
                             </>
                         }
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    />
-                    <ProjectBannerComponent
-                        image={SodiumExtraImage}
-                        name="Sodium Extra"
-                        tagIcons={
-                            <>
-                                <NextIcon />
-                                <GlobeAltIcon className="h-7 w-7 text-white" />
-                            </>
-                        }
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    />
-                    <ProjectBannerComponent
-                        image={SodiumImage}
-                        name="Sodium"
-                        tagIcons={
-                            <>
-                                <NextIcon />
-                                <GlobeAltIcon className="h-7 w-7 text-white" />
-                            </>
-                        }
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    />
-                    <ProjectBannerComponent
-                        image={SkriptImage}
-                        name="Skript"
-                        tagIcons={
-                            <>
-                                <NextIcon />
-                                <GlobeAltIcon className="h-7 w-7 text-white" />
-                            </>
-                        }
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        moreInfo={{
+                            url: "",
+                            isMove: true
+                        }}
                     />
                 </div>
             </section>
@@ -233,6 +239,11 @@ export default function Home() {
                 - cloudsandbox
                  */}
             </section>
+            <div className="flex items-center justify-center">
+                <h1 className="flex h-max w-max items-center justify-center rounded bg-blue-950 bg-opacity-80 px-4 py-2">
+                    View more information
+                </h1>
+            </div>
         </main>
     );
 }
